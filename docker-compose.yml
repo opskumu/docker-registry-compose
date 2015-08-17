@@ -16,9 +16,9 @@ registryv1:
   volumes:
     - /registry/v1:/tmp/registry
 registryv2:
-  image: registry:2
+  image: registry:2.1
   restart: always
   ports:
     - "127.0.0.1:32795:5000"
   volumes:
-    - /registry/v2:/tmp/registry-dev
+    - /registry/v2:/var/lib/registry
